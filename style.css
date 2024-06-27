@@ -1,0 +1,87 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+}
+nav a{
+    text-decoration:none;
+    background-color:navy;
+    border-radius:7px;
+    border:2px solid navy;
+    color:white;
+    padding:5px 10px;
+    margin:0 15px;
+    transition:1s;
+}
+nav a:hover{
+    background-color:white;
+    color:navy;
+}
+
+header{
+    padding:0 0 10px 0;
+    border-bottom:3px solid navy;
+    margin: 5px;
+}
+
+header h1{
+    letter-spacing: 5px;
+    font-weight:900px;
+    font-size: 72px;
+  background: -webkit-linear-gradient(black, #811919);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bluda{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    margin-bottom: 5%;
+}
+.bluda article{
+    width:30%;
+    margin-bottom: 2%;
+    overflow:hidden;
+  text-align:center;
+  border-radius:5px;
+  box-shadow:0 0 5px 5px rgba(0,0,0,0.5);
+}
+.bluda img{
+    width:100%;
+    transition:1s;
+}
+
+.bluda div{
+    z-index:50;
+    background-color:white;
+    padding:1%;
+}
+.cost{
+    text-align:right;
+    color:red;
+    padding:1%;
+}
+.bluda p{
+    padding:2%;
+}
+
+main{
+padding: 3%;
+
+}
+.bluda article:hover img{
+    transform:scale(1.2);
+}
+@media screen and(max-width:500px){
+    .bluda article{
+    width:45%;
+    }
+}
